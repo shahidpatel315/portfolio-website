@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.css'
 })
 export class Home {
+isDarkMode = false;
 
+  toggleTheme() {
+    this.isDarkMode = !this.isDarkMode;
+  }
 }

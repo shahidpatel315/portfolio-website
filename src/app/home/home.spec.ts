@@ -5,7 +5,7 @@ import { Home } from './home';
 describe('Home', () => {
   let component: Home;
   let fixture: ComponentFixture<Home>;
-
+ 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Home]
@@ -20,4 +20,5 @@ describe('Home', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
 });

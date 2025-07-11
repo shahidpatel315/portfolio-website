@@ -1,0 +1,71 @@
+@keyframes blob {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  33% { transform: translateY(-30px) scale(1.1); }
+  66% { transform: translateY(20px) scale(0.9); }
+}
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.animate-blob {
+  animation: blob 8s infinite ease-in-out;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+  animation: fade-in 1s both;
+}
+@keyframes slide-in-down {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-slide-in-down {
+  animation: slide-in-down 1s both;
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-40px);}
+  to { opacity: 1; transform: translateX(0);}
+}
+.animate-slide-in-left {
+  animation: slide-in-left 1s both;
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px);}
+  to { opacity: 1; transform: translateX(0);}
+}
+.animate-slide-in-right {
+  animation: slide-in-right 1s both;
+}
+.portfolio-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Light Theme */
+.light-theme {
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
